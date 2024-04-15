@@ -1,4 +1,4 @@
-// @ts-nocheck  Last Update: Sunday, april 14, 2024
+// @ts-nocheck  Last Update: Sunday, april 16, 2024
 // Built a subscription link with the ability to automatically add CF clean IPs to VLESS configurations.
 // Replace these lines with your uuid and hostname, uuid line (54) - hostname lines (805-808) and (841-844) and (862-865)
 
@@ -850,7 +850,7 @@ for (let i = 0; i < 1; i++) {
 
   const uniqueIPsRE2 = new Set();
   for (const ip of shuffledIPListRE2) {
-    if (uniqueIPsRE2.size >= 15) {
+    if (uniqueIPsRE2.size >= 10) {
       break;
     }
     const config = { ...defaultConfigvless, add: ip, ps: ' | SiLiCON 3 | '};// 3th set config profile name
