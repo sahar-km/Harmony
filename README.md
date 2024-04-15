@@ -1,7 +1,7 @@
 ## VLESS TO SUB
 **Built a subscription link with the ability to automatically add CF clean IPs to VLESS configurations.**
 
-[فارسی](README-FA.md)  [English](README.md)
+[English](README.md)  [فارسی](README-FA.md)
 
 
 **Instructions:**
@@ -11,7 +11,7 @@
 
 2. **Edit the Configuration:**
    - Open the configuration file for editing. with notepad (windows) or MT manager (android) or edit directly at worker code editor place.
-   - Replace the placeholder UUID in line 40 with your own UUID. you can generate uuid from here: [UUID Generator](https://www.uuidgenerator.net/)
+   - Replace the placeholder UUID in line 40 with your own UUID.
    - Replace the placeholder hostname in lines 30-32 and 80-82 with your actual hostname.
    - Save the modified configuration file.
 
