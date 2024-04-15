@@ -1,5 +1,8 @@
 ## VLESS TO SUB
 
+[فارسی](README-FA.md)   [English](README.md)
+
+
 **Instructions:**
 
 1. **Create a Vless Configuration:**
