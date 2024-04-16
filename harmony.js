@@ -1,6 +1,6 @@
 // @ts-nocheck  Last Update: Sunday, april 16, 2024
 // Built a subscription link with the ability to automatically add CF clean IPs to VLESS configurations.
-// Replace these lines with your uuid and hostname, uuid line (54) - hostname lines (805-808) and (841-844) and (862-865)
+// Replace these lines with your uuid and hostname, uuid line (54) - hostname lines (809-812) and (845-848) and (866-869)
 
 // By NiREvil
 
@@ -806,10 +806,10 @@ for (let i = 0; i < 1; i++) {
       security: config.tls,
       encryption: config.type,
       alpn: 'http/1.1',// preferred alpn type
-      host: 'hetzner.radicalization.ir',// replace your hostname -1
+      host: 'hetzner.pages.dev',// replace your hostname -1
       fp: randomfp,
       type: config.net,
-      sni: 'hetzner.radicalization.ir',// your hostname -2
+      sni: 'hetzner.pages.dev',// your hostname -2
     });
     const vlessUrl = `vless://${config.id}@${config.add}:${config.port}?${queryParams.toString()}#${config.ps}`;
     configsList.push(vlessUrl);
@@ -842,10 +842,10 @@ for (let i = 0; i < 1; i++) {
       security: config.tls,
       encryption: config.type,
       alpn: 'http/1.1',
-      host: 'hetzner.radicalization.ir',// your hostname -3
+      host: 'hetzner.pages.dev',// your hostname -3
       fp: randomfp,
       type: config.net,
-      sni: 'hetzner.radicalization.ir',// your hostname -4
+      sni: 'hetzner.pages.dev',// your hostname -4
     });
     const vlessUrl = `vless://${config.id}@${config.add}:${config.port}?${queryParams.toString()}#${config.ps}`;
   if (!uniqueIPsRE1.has(ip)) {configsList.push(vlessUrl);
@@ -863,10 +863,10 @@ for (let i = 0; i < 1; i++) {
       security: config.tls,
       encryption: config.type,
       alpn: 'http/1.1',
-      host: 'hetzner.radicalization.ir',// your hostname -5
+      host: 'hetzner.pages.dev',// your hostname -5
       fp: randomfp,
       type: config.net,
-      sni: 'hetzner.radicalization.ir',// your hostname -6
+      sni: 'hetzner.pages.dev',// your hostname -6
     });
     const vlessUrl = `vless://${config.id}@${config.add}:${config.port}?${queryParams.toString()}#${config.ps}`;
   if (!uniqueIPsRE2.has(ip)) {configsList.push(vlessUrl);
