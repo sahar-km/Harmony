@@ -1,7 +1,7 @@
 ## VLESS TO SUB
 **Built a subscription link with the ability to automatically add CF clean IPs to VLESS configurations.**
 
-[English](README.md)  [فارسی](README-FA.md)
+[English](README-EN.md)  [فارسی](README.md)
 
 
 **Instructions:**
