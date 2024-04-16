@@ -1,6 +1,6 @@
 // @ts-nocheck  Last Update: Sunday, april 16, 2024
 // Built a subscription link with the ability to automatically add CF clean IPs to VLESS configurations.
-// Replace these lines with your uuid and hostname, uuid line (54) - hostname lines (809-812) and (845-848) and (866-869)
+// Replace these lines with your uuid and hostname, uuid line (54) - hostname lines (805-808) and (841-844) and (862-865)
 
 // By NiREvil
 
@@ -697,9 +697,8 @@ async function handleRequest(request) {
     'discord.com', 
     'singapore.com', 
     'nginx-a.radicalization.ir', 
-    'harmony-c.pages.dev', 
+    'resistance.nirevil.ir', 
     'resilience.nirevil.ir', 
-    'arcane-b.pages.dev', 
     '104.17.80.227', 
     '146.19.21.248', 
     '104.18.213.153', 
@@ -734,6 +733,7 @@ async function handleRequest(request) {
     '141.101.115.30', 
     '141.101.121.87', 
     '141.101.122.104', 
+    '193.9.49.48', 
     '193.9.49.67', 
     '104.16.120.114',
     '146.19.21.113',
@@ -781,7 +781,7 @@ async function handleRequest(request) {
   ];
 
   var port = [
-    '443',
+    '8443', '2083',
   ];
 
 
@@ -806,16 +806,16 @@ for (let i = 0; i < 1; i++) {
       security: config.tls,
       encryption: config.type,
       alpn: 'http/1.1',// preferred alpn type
-      host: 'hetzner.pages.dev',// replace your hostname -1
+      host: 'hetzner-d.pages.dev',// replace your hostname -1
       fp: randomfp,
       type: config.net,
-      sni: 'hetzner.pages.dev',// your hostname -2
+      sni: 'hetzner-d.pages.dev',// your hostname -2
     });
     const vlessUrl = `vless://${config.id}@${config.add}:${config.port}?${queryParams.toString()}#${config.ps}`;
     configsList.push(vlessUrl);
   }
 
-  const ipv4urlRE1 = 'https://raw.githubusercontent.com/hossein-mohseni/CF-Web/main/domains.json';
+  const ipv4urlRE1 = 'https://raw.githubusercontent.com/vfarid/cf-clean-ips/main/list.json';
   const ipv4listRE1 = await fetch(ipv4urlRE1);
   const ipListDataRE1 = await ipv4listRE1.json();
   const ipv4ListRE1 = ipListDataRE1.ipv4 || [];
@@ -842,10 +842,10 @@ for (let i = 0; i < 1; i++) {
       security: config.tls,
       encryption: config.type,
       alpn: 'http/1.1',
-      host: 'hetzner.pages.dev',// your hostname -3
+      host: 'hetzner-d.pages.dev',// your hostname -3
       fp: randomfp,
       type: config.net,
-      sni: 'hetzner.pages.dev',// your hostname -4
+      sni: 'hetzner-d.pages.dev',// your hostname -4
     });
     const vlessUrl = `vless://${config.id}@${config.add}:${config.port}?${queryParams.toString()}#${config.ps}`;
   if (!uniqueIPsRE1.has(ip)) {configsList.push(vlessUrl);
@@ -863,10 +863,10 @@ for (let i = 0; i < 1; i++) {
       security: config.tls,
       encryption: config.type,
       alpn: 'http/1.1',
-      host: 'hetzner.pages.dev',// your hostname -5
+      host: 'hetzner-d.pages.dev',// your hostname -5
       fp: randomfp,
       type: config.net,
-      sni: 'hetzner.pages.dev',// your hostname -6
+      sni: 'hetzner-d.pages.dev',// your hostname -6
     });
     const vlessUrl = `vless://${config.id}@${config.add}:${config.port}?${queryParams.toString()}#${config.ps}`;
   if (!uniqueIPsRE2.has(ip)) {configsList.push(vlessUrl);
